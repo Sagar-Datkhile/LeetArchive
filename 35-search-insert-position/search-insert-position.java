@@ -11,10 +11,9 @@ class Solution {
                 low = mid + 1;
             }else if(target<nums[mid]){
                 high = mid - 1;
-            }else{
-                return low;
             }
         }
         return low;
-    }
+    
+}
 }
