@@ -4,8 +4,9 @@ class Solution {
         int result = 0;
     
         for(int i=0; i<prices.length; i++){
-            minValue = Math.min(minValue,prices[i]);
-            result = Math.max(result, prices[i] - minValue);
+            
+            minValue = Math.min(minValue,prices[i]);    //Track/update min stock price
+            result = Math.max(result, prices[i] - minValue); //update maximum profit 
         }
 
         return result;
