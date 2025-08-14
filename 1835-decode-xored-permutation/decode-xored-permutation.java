@@ -4,11 +4,13 @@ class Solution {
         int total = 0;
         int oddXor = 0;
 
+        // XOR of 1 to n
         int[] decoded = new int[n];
         for(int i=1; i<=n; i++){
             total ^= i;
         }
 
+        // XOR of odd elements of encoded
         for(int i=1; i<=n-2; i+=2){
             oddXor = oddXor ^ encoded[i];
         }
