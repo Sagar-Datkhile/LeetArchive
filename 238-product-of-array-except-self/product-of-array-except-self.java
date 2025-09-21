@@ -9,7 +9,7 @@ class Solution {
             result[i] = result[i-1] * nums[i-1];
         }
 
-        // Sufix
+        // Suffix
         int suffix = 1;
         for(int i = n-2; i>=0; i--){
             suffix = suffix * nums[i+1];
