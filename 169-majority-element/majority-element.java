@@ -1,18 +1,19 @@
 class Solution {
     public int majorityElement(int[] nums) {
-        int candidate = nums[0]; // Start with the first element as candidate
-        int count = 0;           // Counter to track "votes"
+        int candidate = nums[0];
+        int count = 0;
 
-        for (int num : nums) {
-            if (count == 0) {
-                candidate = num; // If count resets, choose a new candidate
+        for(int num:nums){
+            if(count == 0){
+                candidate = num;
             }
-            if (num == candidate) {
-                count++; // Same as candidate → add vote
-            } else {
-                count--; // Different → cancel a vote
+            
+            if(num == candidate){
+                count++;
+            }else{
+                count--;
             }
         }
-        return candidate; // Majority element will remain as final candidate
+        return candidate;
     }
 }
