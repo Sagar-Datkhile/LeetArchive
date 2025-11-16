@@ -1,0 +1,19 @@
+class Solution {
+    public int minBitFlips(int start, int goal) {
+        int ans = start ^ goal;
+        int count = 0;
+        // for(int i=0; i<=31; i++){
+        //     if(ans & (1<<i)){
+        //         count++;
+        //     }
+        // }
+
+        // while(ans>0){
+        //     ans/=2;
+        //     count++;
+        // }
+        // return count;
+
+        return Integer.bitCount(ans);
+    }
+}
