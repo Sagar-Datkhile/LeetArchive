@@ -13,7 +13,7 @@ class Solution {
                 seen.remove(n);
             }
         }
-
+        Collections.sort(list);
         int[] result = new int[list.size()];
         for(int i=0; i<list.size(); i++){
             result[i] = list.get(i);
